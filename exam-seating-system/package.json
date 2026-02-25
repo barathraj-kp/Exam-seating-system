@@ -1,0 +1,15 @@
+{
+  "name": "exam-seating-system",
+  "version": "1.0.0",
+  "description": "Exam Hall Seating Arrangement System",
+  "scripts": {
+    "install-all": "npm install && cd backend && npm install && cd ../frontend && npm install",
+    "start-backend": "cd backend && npm start",
+    "start-frontend": "cd frontend && npm start",
+    "dev": "concurrently \"cd backend && npm run dev\" \"cd frontend && npm start\"",
+    "setup-db": "cd backend && node src/config/setupDb.js"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
